@@ -86,6 +86,9 @@
                 });
 
                 if (response.ok) {
+                    document.getElementById('nome').value = '';
+                    document.getElementById('email').value = '';
+                    document.getElementById('telefone').value = '';
                     Toastify({
                         text: "Obrigado por se inscrever! Você entrou na lista de espera.",
                         duration: 3000,
